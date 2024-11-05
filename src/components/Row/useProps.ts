@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
 import axios from "../../axios";
+import { Movie } from "../../type.ts";
 import { requests } from "../../request";
-
+/*
 // ②データの整形
 export type Movie = {
   id: string;
@@ -9,10 +10,10 @@ export type Movie = {
   poster_path: string;
   backdrop_path: string;
 };
+*/
 
 export const useProps = (fetchUrl: string) => {
   const [movies, setMovies] = useState<Movie[]>([]);
-
   const [trailerUrl, setTrailerUrl] = useState<string | null>("");
 
   // ①APIの取得はuseEffectを使う

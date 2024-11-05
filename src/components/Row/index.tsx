@@ -8,7 +8,6 @@ type Props = {
 };
 
 export const Row = ({ title, fetchUrl, isLargeRow }: Props) => {
-  const movies = useProps(fetchUrl);
   return (
     <Layout title={title} isLargeRow={isLargeRow} {...useProps(fetchUrl)} />
   );

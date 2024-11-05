@@ -8,7 +8,7 @@ type Props = {
 export const Layout = ({ movie, truncate }: Props) => {
   return (
     <header
-      className="text-white object-contain"
+      className="text-white object-contain bg-black"
       style={{
         backgroundSize: "cover",
         backgroundImage: `url("https://image.tmdb.org/t/p/original${movie?.backdrop_path}")`,
